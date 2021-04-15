@@ -75,12 +75,63 @@
             </tbody>
         </table><br>
         <p class="tables">This table displays information about arriving flights at an airport. Let's look at the actual code for this table.</p>
-        <img src="table.jpg" style="padding-left: 75px">
+        <img src="table.jpg" style="padding-left: 75px" alt="An image of HTML code which creates the above table">
         <p class="tables">Give it a try for yourself! For an extra challenge, add a footer informing passengers that "Information may change, check with your airline for most current information." <em>Hint:</em> the footer is laid out exactly like the header!</p>
     </div>
 
     <div id="tags">
-
+        <h2 class="tags">Tags</h2>
+        <p class="tags">Tags enable you to use all the different functionality of HTML! There are hundreds of different tags, so we'll only cover a few of the most common here. All tags require closing, unless specifically noted as 'self-closing'. There are other resources linked <a href="#links">below</a> which cover many more.</p>
+        <h3 class="tags">Headings:</h3>
+        <p class="tags">There are six different Headings you can use in HTML. These enable you to separate and organize your information into clear sections, and can also allow you to specify specific formatting for each type. They are called as follows:</p>
+        <ul class="tags">
+            <li><code>&lt;h1&gt;</code></li>
+            <li><code>&lt;h2&gt;</code></li>
+            <li><code>&lt;h3&gt;</code></li>
+            <li><code>&lt;h4&gt;</code></li>
+            <li><code>&lt;h5&gt;</code></li>
+            <li><code>&lt;h6&gt;</code></li>
+        </ul>
+        <p class="tags">These are all extremely similar, the only difference being the size each appears in the default HTML format. Obviously, with CSS you could make an <code>&lt;h6&gt;</code> tag appear larger and more prominent than the <code>&lt;h1&gt;</code> heading if you wanted to! But this would be needlessly confusing, so I wouldn't recommend it.</p>
+        <h3 class="tags">General Text:</h3>
+        <p class="tags">General text can be inserted with the <code>&lt;p&gt;</code> tag. Within that tag, any text will appear exactly as typed. There are a number of formatting options available within CSS again, but what if you want to only apply it to a small portion of the text? Let's look at some common formatting:</p>
+        <ul class="tags">
+            <li><code>&lt;a&gt;</code>: This tag will create a link around any text which is put between the tags. A <em class="url">href="http://www.example.com"</em> property must be specified.</li>
+            <li><code>&lt;strong&gt;</code>: This tag will create <strong>bold</strong> text.</li>
+            <li><code>&lt;em&gt;</code>: This tag will create <em>italics</em> text.</li>
+            <li><code>&lt;span&gt;</code>: This tag will create <span>underlined</span> text.</li>
+            <li><code>&lt;!--text--&gt;</code>: This will create a comment within HTML. Anything within the tag will be ignored by the browser. <strong>Be sure to close this tag in the correct place!</strong></li>
+            <li><code>&lt;hr&gt;</code>: This will create a single horizontal line, usually as a formatting choice to break up sections (self-closing).</li>
+            <li><code>&lt;br&gt;</code>: This will create a single blank line, usually as a formatting choice to break up sections (self-closing).</li>
+        </ul>
+        <h3 class="tags">Lists:</h3>
+        <p class="tags">HTML allows us to create two types of lists: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>). The only difference is that one uses un-numbered bullets, the other specifies a number/letter/etc for each. Each item on the list must be enclosed by the <code>&lt;li&gt;</code> tag.</p>
+        <h3 class="tags">Multimedia:</h3>
+        <p class="tags">Every good website has some sort of multimedia! Pictures and videos can really make or break a website. Fortunately, they're pretty easy to add in.</p>
+        <h4 class="tags">Images</h4>
+        <p class="tags">Images can be inserted into your webpage using the <code>&lt;img&gt;</code> tag (self-closing). There are several attributes which can be specified, but the only required one is <em class="url">src="http://www.example.com"</em>, which gives the source of the image. It is good practice to include an <em>alt="example text"</em> attribute as well, which tells the browser what text to display in case the image can't be displayed.</p>
+        <h4 class="tags">Audio</h4>
+        <p class="tags">Audio can be added to your webpage using the <code>&lt;audio&gt</code>; tag. Within the opening tag, you can add <em>controls</em> if you'd like the user to be able to control the audio. Inside the tag, there should be a <code>&lt;source&gt;</code> tag which, as you may guess, specifies the source of the audio. Here's an example of this tag's use:</p>
+        <p class="tags"><code>&lt;audio controls&gt;<br>
+                &lt;source src="example.mp3" type="audio/mpeg"&gt;<br>
+                No audio support.<br>
+                &lt;/audio&gt;
+        </code></p>
+        <p class="tags">In this example, the first line contains the opening tag and the <em>controls</em> attribute, allowing the user to control the audio. The second line specifies the source and its' type. The third line tells the browser what to display if the audio is not playable for any reason. And the last line is the closing tag.</p>
+        <h4 class="tags">Video</h4>
+        <p>Video is very similar to audio; it uses the <code>&lt;video&gt;</code> tag. Again, within the opening tag a <em>controls</em> attribute can be added. New with video: <em>width</em> and <em>height</em> attributes can be specified in pixels. Let's look at an example:</p>
+        <p class="tags"><code>&lt;video width="500" height="300" controls&gt;<br>
+            &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+            No video support.<br>
+            &lt;/video&gt;
+        </code></p>
+        <p class="tags">In this example, the first line contains the video tag, attributes for the width and height of the video, and specifies controls should be provided. The second line again provides the source and type of file. Third, what the browser should display if the video cannot be loaded for some reason. And fourth, the closing tag.</p>
+        <h3 class="tags" id="links">More Resources:</h3>
+        <p class="tags">These websites can provide a wealth of information beyond what I've included here.</p>
+        <ul class="tags">
+            <li><a href="https://www.w3schools.com/html/" target="_blank">w3 Schools</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a></li>
+        </ul>
 
     </div>
 

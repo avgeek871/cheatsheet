@@ -1,1 +1,1 @@
-This is an HTML/CSS cheatsheet used for practice with Git as well as HTML and CSS.
+This is an HTML/CSS cheatsheet used for practice with Git as well as HTML and CSS. It will be reasonably lengthy, should be a decent challenge.

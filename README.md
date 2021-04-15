@@ -1,0 +1,1 @@
+This is an HTML/CSS cheatsheet used for practice with Git as well as HTML and CSS.
